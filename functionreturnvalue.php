@@ -3,7 +3,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-function sum(int $first, int $second)
+function sum(int $first, int $second) : int
 {
 $total = $first + $second;
 return $total;
@@ -14,7 +14,7 @@ var_dump($result);
 $result = sum(20, 30);
 var_dump($result);
 
-function getFinalValue (int $value)
+function getFinalValue (int $value) : string
 {
     if ($value >= 80) {
         return "A";
@@ -33,5 +33,5 @@ function getFinalValue (int $value)
         echo "ups" . PHP_EOL;
     }$score = getFinalValue(90);
     var_dump($score);
-    
+
 
