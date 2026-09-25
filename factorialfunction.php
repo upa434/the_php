@@ -13,3 +13,31 @@ function factorialLoop(int $value): int
 }
 var_dump(factorialLoop(5));
 var_dump(1 * 2 * 3 * 4 * 5);
+
+function factorialRecursive(int $value): int
+{
+    if($value == 1){
+        return 1;
+        }else{
+            return $value * factorialRecursive($value -1);
+
+        }
+    
+}
+echo factorialRecursive(5) . PHP_EOL;
+var_dump(factorialRecursive(5));
+
+//note jika menggunakan recursive terlalu dalam dapat menyebabkan memori kepenuhan 
+//misalnya
+
+function loop(int $value) : int
+{
+    if ($value == 0) {
+        echo "End loop" . PHP_EOL;
+    }else{
+        echo "loop-$value" . PHP_EOL;
+        loop($value -1);
+    }
+}
+
+loop (3000000);
