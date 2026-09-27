@@ -3,7 +3,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-$name = "Nino Nakano";
+$name = "Aufanur";
 echo "Name : " . $name . PHP_EOL ;
 echo "Age : " . 18 . PHP_EOL;
 

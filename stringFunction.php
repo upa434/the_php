@@ -11,4 +11,4 @@ error_reporting(E_ALL);
 var_dump(join(",",[10, 11, 12, 13, 14,]));
 var_dump(explode(" ", "Aufa Nur"));
 var_dump(trim("    Aufa    nur   "));
-var_dump(substr("Aufa nur", 0, 3));
+var_dump(substr("Aufa nur", 0, ));
