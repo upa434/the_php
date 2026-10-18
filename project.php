@@ -11,4 +11,21 @@ $user = [
     "asal" => "Indonesia",
 
 ];
-echo $user["name"];
+echo $user["name"] . PHP_EOL;
+
+echo <<<AUFA
+System information student on Universitas Lancang kuning 
+AUFA;
+
+echo PHP_EOL;
+
+$Gender = "Pria";
+$Usia = 20;
+
+if ($Usia == 20){
+    echo "Halo Aufa" . PHP_EOL;
+}else{
+    echo "Unknown user" . PHP_EOL;;
+}
+
+
